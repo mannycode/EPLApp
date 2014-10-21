@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<input type="text" placeholder="Search..." ng-model="nameFilter">
+
+
+
+<table>
+    <thead>
+    <tr>  <th colspan="4">EPL 2013 Standings</th>
+    </tr>
+    </thead>
+    <tr><td>Sr No</td>
+        <td>Logo</td>
+        <td>Club</td>
+        <td>Points</td>
+    </tr>
+
+
+    <tr ng-repeat="club in clublist | filter: nameFilter">
+        <td>{{$index+1}}</td>
+        <td><img src="TeamLogo/{{club.club.name}}.png" height="42" width="42"> </td>
+        <td>{{club.club.name}}</td>
+        <td>{{club.club.points}}</td>
+
+
+
+    </tr>
+
+
+
+
+</table>
+
+<br/>
+<a href="#/detailview">Detail View</a>
+
+
+</body>
+</html>
