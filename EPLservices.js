@@ -1,6 +1,7 @@
 /**
- * Created by tricom on 10/20/14.
- */
+ * The service provides an array of objects to the different controllers that hold the data
+ *
+ * */
 angular.module("EPLapp.EPLServices",[])
     .service('sharedProperties',function(){
 
@@ -254,7 +255,7 @@ angular.module("EPLapp.EPLServices",[])
 
 
         ];
-
+//The Service returns a getProperty function that is used to access the array
         return{
 
             getProperty:function(){

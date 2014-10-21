@@ -1,5 +1,8 @@
 /**
- * Created by tricom on 10/14/14.
+ *The eplController controls view1 that presents the points table
+ * The clubController controls view2 that presents the individual club details. Both share the clublist2 array
+ * via the service sharedProperties
+ *
  */
 angular.module("EPLapp.EPLController",[])
     .controller('eplController',function($scope,sharedProperties){

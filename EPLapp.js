@@ -1,5 +1,6 @@
 /**
- * Created by tricom on 10/14/14.
+ * The Root module
+ * routeProvider routes to view1 by default or view2 if a given club is selected(with an id)
  */
 var demoApp=angular.module("EPLapp",['EPLapp.EPLController','EPLapp.EPLServices','ngRoute']);
 
